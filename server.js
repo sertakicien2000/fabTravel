@@ -1,4 +1,5 @@
 const express = require("express");
+const resy =require ("./config/db")
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -21,8 +22,14 @@ app.use(routes);
 require("./routes/api/details.js")(app);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Fabtravel");
-
+mongoose.connect(resy.db_uri, {
+  useNewUrlParser: true
+}).then(() => {
+  console.log("Successfully connected to the database")    
+}).catch(err => {
+  console.log('Could not connect to the database. Exiting now...', err)
+  process.exit()
+})
 // Send every request to the React app
 // Define any API routes before this runs
 app.get("*", function(req, res) {
