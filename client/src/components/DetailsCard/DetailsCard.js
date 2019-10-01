@@ -74,20 +74,20 @@ class DetailsCard extends Component {
                                     </h5>
                                     <div className="row">
                                     <div className="center">
-                                        <FacebookShareButton url={"https://www.facebook.com"}>
+                                        <FacebookShareButton url={"https://www.facebook.com/api/cities/" + id}>
                                             < FacebookIcon></FacebookIcon>
                                             {shareCount => (
                                                 <span className="myShareCountWrapper">{shareCount}</span>
                                             )}
                                         </FacebookShareButton>
                                         
-                                    <LinkedinShareButton url={"https://www.linkedin.com"}>
+                                    <LinkedinShareButton url={"https://www.linkedin.com/api/cities/" + id}>
                                             < LinkedinIcon></LinkedinIcon>
                                             {shareCount => (
                                                 <span className="myShareCountWrapper">{shareCount}</span>
                                             )}
                                         </LinkedinShareButton>
-                                        <TwitterShareButton url={"https://twitter.com"}>
+                                        <TwitterShareButton url={"https://twitter.com/api/cities/" + id}>
                                             < TwitterIcon></TwitterIcon>
                                             {shareCount => (
                                                 <span className="myShareCountWrapper">{shareCount}</span>
@@ -95,80 +95,80 @@ class DetailsCard extends Component {
                                         </TwitterShareButton>
                                         
                                         
-                                        <TelegramShareButton url={"https://web.telegram.org"}>
+                                        <TelegramShareButton url={"https://web.telegram.org/api/cities/" + id}>
                                             < TelegramIcon></TelegramIcon>
                                             {shareCount => (
                                                 <span className="myShareCountWrapper">{shareCount}</span>
                                             )}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
                                         </TelegramShareButton>
-                                        <WhatsappShareButton url={"https://www.whatsapp.com"}>
+                                        <WhatsappShareButton url={"https://www.whatsapp.com/api/cities/" + id}>
                                             < WhatsappIcon></WhatsappIcon>
                                             {shareCount => (
                                                 <span className="myShareCountWrapper">{shareCount}</span>
                                             )}
                                         </WhatsappShareButton>
-                                        <InstapaperShareButton url={"https://www.instapaper.com/"}>
+                                        <InstapaperShareButton url={"https://www.instapaper.com/api/cities/" + id}>
                                         < InstapaperIcon></InstapaperIcon>
                                         {shareCount => (
                                             <span className="myShareCountWrapper">{shareCount}</span>
                                         )}
                                     </InstapaperShareButton>
-                                        <PinterestShareButton url={"https://www.pinterest.fr"}>
+                                        <PinterestShareButton url={"https://www.pinterest.fr/api/cities/" + id}>
                                             < PinterestIcon></PinterestIcon>
                                             {shareCount => (
                                                 <span className="myShareCountWrapper">{shareCount}</span>
                                             )}
                                         </PinterestShareButton>
-                                        <VKShareButton url={"https://vk.com"}>
+                                        <VKShareButton url={"https://vk.com/api/cities/" + id}>
                                             < VKIcon></VKIcon>
                                             {shareCount => (
                                                 <span className="myShareCountWrapper">{shareCount}</span>
                                             )}
                                         </VKShareButton>
-                                        <OKShareButton url={"https://ok.ru"}>
+                                        <OKShareButton url={"https://ok.ru/api/cities/" + id}>
                                             < TwitterShareButton></TwitterShareButton>
                                             {shareCount => (
                                                 <span className="myShareCountWrapper">{shareCount}</span>
                                             )}
                                         </OKShareButton>
-                                        <RedditShareButton url={"https://www.reddit.com"}>
+                                        <RedditShareButton url={"https://www.reddit.com/api/cities/" + id}>
                                             < RedditIcon></RedditIcon>
                                             {shareCount => (
                                                 <span className="myShareCountWrapper">{shareCount}</span>
                                             )}
                                         </RedditShareButton>
-                                        <TumblrShareButton url={"https://www.tumblr.com"}>
+                                        <TumblrShareButton url={"https://www.tumblr.com/api/cities/" + id}>
                                             < TumblrIcon></TumblrIcon>
                                             {shareCount => (
                                                 <span className="myShareCountWrapper">{shareCount}</span>
                                             )}
                                         </TumblrShareButton>
-                                        <LivejournalShareButton url={"https://www.livejournal.com"}>
+                                        <LivejournalShareButton url={"https://www.livejournal.com/api/cities/" + id}>
                                             < LivejournalIcon></LivejournalIcon>
                                             {shareCount => (
                                                 <span className="myShareCountWrapper">{shareCount}</span>
                                             )}
                                         </LivejournalShareButton>
-                                        <MailruShareButton url={"https://corp.mail.ru"}>
+                                        <MailruShareButton url={"https://corp.mail.ru/api/cities/" + id}>
                                             < MailruIcon></MailruIcon>
                                             {shareCount => (
                                                 <span className="myShareCountWrapper">{shareCount}</span>
                                             )}
                                         </MailruShareButton>
-                                        <ViberShareButton url={"https://www.viber.com"}>
+                                        <ViberShareButton url={"https://www.viber.com/api/cities/" + id}>
                                             < ViberIcon></ViberIcon>
                                             {shareCount => (
                                                 <span className="myShareCountWrapper">{shareCount}</span>
                                             )}
                                         </ViberShareButton>
                                        
-                                        <LineShareButton url={"https://line.me"}>
+                                        <LineShareButton url={"https://line.me/api/cities/" + id}>
                                         < LineIcon></LineIcon>
                                         {shareCount => (
                                             <span className="myShareCountWrapper">{shareCount}</span>
                                         )}
                                     </LineShareButton>
-                                    <PocketShareButton url={"https://getpocket.com"}>
+                                    <PocketShareButton url={"https://getpocket.com/api/cities/" + id}>
                                     < PocketIcon></PocketIcon>
                                     {shareCount => (
                                         <span className="myShareCountWrapper">{shareCount}</span>
@@ -176,7 +176,7 @@ class DetailsCard extends Component {
                                 </PocketShareButton>
                                
                                
-                            <EmailShareButton url={"https://www.facebook.com"}>
+                            <EmailShareButton url={"https://www.facebook.com/api/cities/" + id}>
                                 < EmailIcon></EmailIcon>
                                 {shareCount => (
                                     <span className="myShareCountWrapper">{shareCount}</span>
